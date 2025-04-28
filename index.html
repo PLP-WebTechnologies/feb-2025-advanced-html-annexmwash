@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        form {
+            max-width: 500px;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+        }
+        form fieldset {
+            margin-bottom: 20px;
+        }
+        form legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color: #f88379 ;">
+
+    <header>
+        <h1 style="text-align: center;">MY DOCUMENT</h1>
+    </header>
+
+    <main>
+
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>My Favorite Activities</h2>
+            <ol type="I">
+                <li>Reading</li>
+                <li>Traveling</li>
+                <li>Coding</li>
+                <li>Photography</li>
+                <li>Cooking</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+    
+            <img src="https://images.pexels.com/photos/7841423/pexels-photo-7841423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Beautiful Mountain View" width="300">
+        </section>
+
+        <!-- Table of 5 Contacts -->
+        <section>
+            <h2>Contact List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Renson Mzee</td>
+                        <td>123 Moi Avenue</td>
+                        <td>0724496056</td>
+                        <td>mzeerenson@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Collins Tole</td>
+                        <td>456 Ronald Ngala rd</td>
+                        <td>0720815569</td>
+                        <td>tolecollins20@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Johnson Ochogo</td>
+                        <td>78 Mumia street</td>
+                        <td>0714789163</td>
+                        <td>ochogojohn22@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Mshai</td>
+                        <td>45 Mwembe street</td>
+                        <td>0781718538</td>
+                        <td>emilymshai44@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Chris Wafula</td>
+                        <td>23 Mwembe kuku</td>
+                        <td>0717060933</td>
+                        <td>wafulachris11@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Registration Form</h2>
+
+            <form action="#" method="POST">
+                <!-- Name Field -->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <!-- Email Field -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+
+                <!-- Date of Birth Field -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- Dropdown: Country Selection -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select your country--</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Rwanda">Rwanda</option>
+                </select>
+
+                <!-- Radio Buttons: Gender -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <!-- Checkboxes: Interests -->
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label><br>
+
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label><br>
+
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label><br>
+
+                    <input type="checkbox" id="travel" name="interests" value="travel">
+                    <label for="travel">Travel</label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit" style="background-color: #28a7a7; color: white; cursor: pointer;">
+                    Register
+                </button>
+                
+            </form>
+        </section>
+
+    </main>
+
+   
+
+</body>
+</html>
+
+    
